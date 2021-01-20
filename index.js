@@ -52,6 +52,6 @@ async function runTests(addr) {
   });
 }
 
-rl.question("Enter api (in format of 'http://localhost:3000'): ", (addr) =>
+rl.question("Enter api (in format of 'http://localhost:3000/api/tasks'): ", (addr) =>
   runTests(addr).catch((_) => console.log("Test failed"))
 );
